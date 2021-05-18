@@ -1,0 +1,18 @@
+System check identified no issues (0 silenced).
+RUN GET /
+Checking response code...  200
+OK
+RUN POST / with  {'101': '30 40', '102': '40 40', 'K103': '0 0'}
+Checking response code...  301
+OK
+Checking emptiness in machines...
+OK
+Checking if polygon contains point of drop ...
+OK
+Checking if math was right...
+OK
+RUN POST / with  {'101': '23'}
+Checking response code...  200
+OK
+Checking reaction on invalid data...
+OK
