@@ -48,11 +48,11 @@ services:
       - ./backoffice:/app
     command: >
       bash -c "
-      python manage.py test > test_results.txt
+      pip install shapely
+      && python manage.py test > test_results.txt
       && python manage.py migrate
       && python manage.py loaddata test_data.json
-      && python manage.py runserver 0.0.0.0:8000
-      "
+      && python manage.py runserver 0.0.0.0:8000"
     environment:
       - BACKOFFICE_DB_NAME=${BACKOFFICE_DB_NAME}
       - BACKOFFICE_USER_DB=${BACKOFFICE_DB_USER}
