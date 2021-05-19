@@ -1,5 +1,4 @@
-![image](https://user-images.githubusercontent.com/69368761/118599275-f3ac8500-b7b7-11eb-86bb-b259fd804128.png)
-
+![image](https://user-images.githubusercontent.com/69368761/118881237-83a71780-b8fb-11eb-896f-b15d9d2d5bbf.png)
 Test task!
 How to deploy:
 1) run start.sh
