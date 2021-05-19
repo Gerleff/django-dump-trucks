@@ -3,7 +3,6 @@ import random
 import re
 
 from django.http import (HttpResponse, HttpRequest,
-                         HttpResponsePermanentRedirect,
                          HttpResponseForbidden)
 from django.shortcuts import render, redirect
 from django.views import View
@@ -35,7 +34,8 @@ class StorageRow:
         self.name = storage.name
         self.prev_amount = storage.prev_amount
         self.amount = storage.amount
-        self.correlation = f'{storage.silicon_dioxide}% SiO2 {storage.iron}% Fe'
+        self.correlation = (f'{storage.silicon_dioxide * 100}% SiO2' 
+                            f' {storage.iron * 100}% Fe')
 
 
 class DumpTrucksView(View):
