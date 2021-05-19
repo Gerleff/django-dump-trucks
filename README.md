@@ -3,7 +3,7 @@
 Test task!
 How to deploy:
 1) run start.sh
-2) go to http:localhost
+2) go to localhost
 3) admin panel is availible at localhost/admin
 - login: admin
 - passwd: admin
